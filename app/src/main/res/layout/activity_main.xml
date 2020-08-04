@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#0cf"
+        android:layout_marginTop="30dp">
+
+        <com.haoyh.luckynumberview.lucknumber.LuckyNumberView
+            android:id="@+id/lucknumberview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_choosed_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="已选中数字："
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_change_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改动画模式：" />
+
+        <RadioButton
+            android:id="@+id/rb_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:text="滑动" />
+
+        <RadioButton
+            android:id="@+id/rb_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="跳动" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#1990D7"
+        android:gravity="center"
+        android:text="开始抽奖"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_stop"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#1990D7"
+        android:gravity="center"
+        android:text="显示抽奖结果"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
